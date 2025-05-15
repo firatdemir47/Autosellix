@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum MessageType {
-	NO_RECORD_EXIST("1004", "kayıt bulunamadı"), GENERAL_EXCEPTION("9999", "genel bir hata oluştu");
+	NO_RECORD_EXIST("1004", "kayıt bulunamadı"), TOKEN_IS_EXPIRED("1005","tokenin süresi bitmiştir "),GENERAL_EXCEPTION("9999", "genel bir hata oluştu");
 
 	private String code;
 
