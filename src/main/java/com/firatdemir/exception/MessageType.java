@@ -5,7 +5,9 @@ import lombok.Getter;
 @Getter
 public enum MessageType {
 	NO_RECORD_EXIST("1004", "kayıt bulunamadı"), TOKEN_IS_EXPIRED("1005", "tokenin süresi bitmiştir "),
-	USERNANE_NOT_FOUND("1006", "username bulunamadı"), GENERAL_EXCEPTION("9999", "genel bir hata oluştu");
+	USERNANE_NOT_FOUND("1006", "username bulunamadı"),
+	USERNAME_OR_PASSWORD_INVALID("1007", "kullanıcı adı veya şifre hatalı"),
+	GENERAL_EXCEPTION("9999", "genel bir hata oluştu");
 
 	private String code;
 
