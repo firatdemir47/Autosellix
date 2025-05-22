@@ -11,6 +11,7 @@ import com.firatdemir.controller.RootEntity;
 import com.firatdemir.dto.AuthRequest;
 import com.firatdemir.dto.AuthResponse;
 import com.firatdemir.dto.DtoUser;
+import com.firatdemir.dto.RefreshTokenRequest;
 import com.firatdemir.service.IAuthenticationService;
 
 import jakarta.validation.Valid;
@@ -33,6 +34,13 @@ public class RestAuthenticationControllerImpl extends RestBaseController impleme
 	public RootEntity<AuthResponse> authenticate(@Valid @RequestBody AuthRequest input) {
 
 		return ok(authenticationService.authenticate(input));
+	}
+	
+	@PostMapping("/refreshToken")
+	@Override
+	public RootEntity<AuthResponse> refreshToken(@Valid @RequestBody RefreshTokenRequest input) {
+		
+		return ok(authenticationService.refreshToken(input));
 	}
 
 }
