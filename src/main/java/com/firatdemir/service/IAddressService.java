@@ -1,5 +1,9 @@
 package com.firatdemir.service;
 
-public interface IAddressService {
+import com.firatdemir.dto.DtoAddreessIU;
+import com.firatdemir.dto.DtoAddress;
 
+public interface IAddressService {
+	
+	public DtoAddress saveAddress(DtoAddreessIU dtoAddreessIU);
 }
