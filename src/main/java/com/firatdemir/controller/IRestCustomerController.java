@@ -5,5 +5,5 @@ import com.firatdemir.dto.DtoCustomerIU;
 
 public interface IRestCustomerController {
 
-	public DtoCustomer saveCustomer(DtoCustomerIU dtoCustomerIU);
+	public RootEntity<DtoCustomer> saveCustomer(DtoCustomerIU dtoCustomerIU);
 }
