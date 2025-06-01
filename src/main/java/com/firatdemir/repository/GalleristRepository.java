@@ -7,5 +7,6 @@ import com.firatdemir.model.Gallerist;
 
 @Repository
 public interface GalleristRepository extends JpaRepository<Gallerist, Long> {
-
+	
+	
 }
