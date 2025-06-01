@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.firatdemir.dto.DtoAddress;
 import com.firatdemir.dto.DtoGallerist;
@@ -18,6 +19,7 @@ import com.firatdemir.repository.AddressRepository;
 import com.firatdemir.repository.GalleristRepository;
 import com.firatdemir.service.IGalleristService;
 
+@Service
 public class GalleristServiceImpl implements IGalleristService {
 
 	@Autowired
