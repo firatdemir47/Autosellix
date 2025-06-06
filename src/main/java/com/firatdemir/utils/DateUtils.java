@@ -7,7 +7,7 @@ public class DateUtils {
 
 	public static String getcurrentDate(Date date) {
 
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
 		return simpleDateFormat.format(date);
 	}
 }
