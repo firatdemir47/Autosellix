@@ -13,13 +13,13 @@ import com.firatdemir.dto.CurrenyRatesResponse;
 import com.firatdemir.service.ICurrencyRatesService;
 
 @RestController
-@RequestMapping("/rest/api/currency-rates")
+@RequestMapping("/rest/api/")
 public class RestCurrencyRatesControllerImpl extends RestBaseController implements IRestCurrencyRatesController {
 
 	@Autowired
 	private ICurrencyRatesService currencyRatesService;
 
-	@GetMapping("/")
+	@GetMapping("/currency-rates")
 	@Override
 	public RootEntity<CurrenyRatesResponse> getCurrencyRates(@RequestParam("startDate") String startDate,
 			@RequestParam("endDate") String endDate) {
