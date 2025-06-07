@@ -10,6 +10,7 @@ public enum MessageType {
 	REFRESH_TOKEN_NOT_FOUND("1008", "refresh token bulunamadı"),
 	REFRESH_TOKEN_IS_EXPIRED("1009", "refres tokenın süresi bitmiştir"),
 	CUSTOMER_AMOUNT_IS_NOT_ENOUGH("1001","müşterinin parası yeterli değildir "),
+	CAR_STATUS_IS_ALREADY_SALED("1012","araba satılmış göründüğü için satılamaz"),
 	CURRENY_RATES_IS_OCCURED("1010", "döviz kuru alınamadı"), GENERAL_EXCEPTION("9999", "genel bir hata oluştu");
 
 	private String code;
